@@ -1,29 +1,39 @@
 
 | CS-665       | Software Design & Patterns |
 |--------------|----------------------------|
-| Name         | FIRST_NAME LAST_NAME       |
-| Date         | MM/DD/YYYY                 |
-| Course       | Fall / Spring / Summer     |
-| Assignment # |                            |
+| Name         | Alaap Bharadwaj       
+| Date         | 02/23/2023                 
+| Course       |  / Spring /      
+| Assignment # |     2                       
 
 # Assignment Overview
-Please add a paragraph or two overviewing the objectives of the assignment.
+A collection of retailers in a busy city have collaborated with local freelance van, taxi, and
+scooter drivers for the delivery of products to customer destinations. Your task is to develop a notification system that will inform drivers about delivery requests. Upon receiving a product delivery order from a store, a delivery request must be generated and sent to all available drivers.
 
 # GitHub Repository Link:
-https://github.com/{YOUR_USERNAME}/cs-665-assignment-{ASSIGNMENT_NUMBER}
+https://github.com/alaapb/cs-665-assignment-2
 
 # Implementation Description 
-
 
 For each assignment, please answer the following:
 
 - Explain the level of flexibility in your implementation, including how new object types can
 be easily added or removed in the future.
+
+New objects can be easily added to the application without hurting the rest of the implementation. The order class has been made so that there can be room for more expansion in the future if more information is required within each Order. 
+
 - Discuss the simplicity and understandability of your implementation, ensuring that it is
 easy for others to read and maintain.
+
+I feel that the code is very simple to follow and easy to understand. There is sufficient documentation toi describe the thought process of each method and what each one does.
+
 - Describe how you have avoided duplicated code and why it is important.
+
+One way I avoided having duplicated code was passing around my Distributor instance around so that for example when a driver is created it gets added to the list in the distributor automatically within the constructor. 
+
 - If applicable, mention any design patterns you have used and explain why they were
 chosen.
+For this implementation an Observer Design Pattern was used to help implement this application. The objects that use this pattern is the Distributor and Driver class, where they have subscribe/unsubscribe methods and as well as notifySubscribers and an update method in the Driver class. This implementation then helps so that everytime a delivery request has been made all the available drivers will receive a notification automaticaly. 
 
 
 # Maven Commands
