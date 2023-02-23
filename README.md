@@ -35,6 +35,8 @@ One way I avoided having duplicated code was passing around my Distributor insta
 chosen.
 For this implementation an Observer Design Pattern was used to help implement this application. The objects that use this pattern is the Distributor and Driver class, where they have subscribe/unsubscribe methods and as well as notifySubscribers and an update method in the Driver class. This implementation then helps so that everytime a delivery request has been made all the available drivers will receive a notification automaticaly. 
 
+# UML Class Diagram
+Located in the github repo
 
 # Maven Commands
 
